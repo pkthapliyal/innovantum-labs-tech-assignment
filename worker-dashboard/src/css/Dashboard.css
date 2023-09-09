@@ -1,0 +1,184 @@
+* p {
+    color: #546E7A;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+
+}
+
+h4 {
+    color: #9C27B0;
+
+}
+
+.container div {
+    border-radius: 10px;
+    text-align: left;
+}
+
+
+.name {
+    margin-top: 2%;
+    padding: 5px 15px 5px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+}
+
+.searchBar {
+    margin: auto;
+    width: 50%;
+    box-sizing: content-box;
+    margin-top: 2%;
+    border-radius: 5px;
+    align-items: center;
+    /* width: 20%; */
+    padding: 6px 15px 6px;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
+}
+
+
+.searchBar input[type="text"],
+.searchBar button {
+    width: 49%;
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
+}
+
+/* Optional: Add some spacing or styling as needed */
+.searchBar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #546E7A;
+    border-radius: 5px;
+}
+
+.searchBar button {
+    margin-left: 2%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    /* Example button styling */
+    color: #fff;
+    font-weight: bold;
+    /* Example button styling */
+    border: none;
+    /* Example button styling */
+}
+
+.name h4:nth-child(1) {
+    margin-bottom: -10px;
+    color: #546E7A;
+}
+
+.detail-container {
+    box-shadow: none;
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 240px);
+    row-gap: 10%;
+}
+
+.detail-container div {
+    padding: 5px 15px 5px;
+    margin-right: 10%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.chart-detail-container {
+
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.chart-detail-container>div:nth-child(2) {
+    margin-top: 2.5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+}
+
+
+
+/* Default styles for all screen sizes */
+
+
+
+
+
+
+/* Media query for screens larger than 1024px */
+@media (min-width: 1025px) {}
+
+@media (min-width: 774px) and (max-width: 1030px) {
+    .detail-container {
+        box-shadow: none;
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: repeat(3, 240px);
+        row-gap: 10%;
+    }
+
+    .chart-detail-container {
+        display: inline-block;
+        /* grid-template-columns: repeat(1, 50%); */
+    }
+
+    .chart-detail-container>div:nth-child(2) {
+        margin-top: 5%;
+
+    }
+
+    .chart-detail-container>div:nth-child(2)>div {
+        margin-left: 20%;
+    }
+}
+
+/* Media query for screens smaller than 768px */
+@media (min-width:440px) and (max-width: 773px) {
+    .detail-container {
+        box-shadow: none;
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        row-gap: 10%;
+    }
+
+    .chart-detail-container {
+        display: inline-block;
+        /* grid-template-columns: repeat(1, 50%); */
+    }
+
+    .chart-detail-container>div:nth-child(2) {
+        margin-top: 10%;
+
+    }
+
+}
+
+/*  media query for small screens */
+@media (max-width:445px) {
+
+    h4,
+    p {
+        font-size: .7em;
+    }
+
+    .detail-container {
+        box-shadow: none;
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        row-gap: 5%;
+    }
+
+
+    .chart-detail-container {
+        display: inline-block;
+        /* grid-template-columns: repeat(1, 50%); */
+    }
+
+    .chart-detail-container>div:nth-child(2) {
+        margin-top: 12%;
+
+    }
+
+}
