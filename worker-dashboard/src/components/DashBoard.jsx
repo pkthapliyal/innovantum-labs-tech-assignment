@@ -50,6 +50,7 @@ const DashBoard = () => {
             }
             else {
                 ;
+                alert("No working day found");
                 //  Clear all the state if now data is found
                 setWorkerName("");
                 setStartDate("")
@@ -57,7 +58,6 @@ const DashBoard = () => {
                 setWorkerID(0)
                 setTotalWorkingHrs(0);
                 setOverTime(0)
-                alert("No working day found");
 
             }
 
